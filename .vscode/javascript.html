@@ -1,0 +1,105 @@
+<html><head><style>
+    form{
+        text-align: center;
+        justify-content: center;
+        border-radius: 1px;
+        border: 1px;
+        align-items: center;
+    }
+    h1{
+        text-align: center;
+        color: #333;
+    }
+    body{
+        background:#f2f2f2;
+        font-family:Arial, Helvetica, sans-serif;
+        padding: 20px;
+
+    }
+    .container{
+        border-radius: 10px;
+        box-shadow: 0 0 50px rgba(3, 0, 0, 0.01);
+         max-width: 400px;
+         margin: auto;
+         padding: 25px;
+         background-color: #f2f2f2;
+    }
+    input,textarea{
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button{
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #2e8b57;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: #246b;
+    }
+    .luior{
+        border-radius: 1px;
+    }
+
+</style></head>
+    <body><div class="">
+        <h1>FORM VALIDATION</h1>
+        <FORM on submit="returnvalidation()">
+        FIRST NAME:<input type="text" placeholder="enter your first name" id="name" required><br>
+        SECOND NAME:<input type="text" placeholder="enter your second name" id="name" required> <br>  
+        E-MAIL:<input type="email" placeholder="email">
+         <button type="submit">submit</button>
+        </FORM></div>
+        
+        </button>
+        <script>
+            function returnvalidation(){
+                let a=document.getElementBYid(name);
+                if(a="   "){
+                   console.log("please ,try ntering your name");
+                }
+            }
+            let a="name";
+            let b="class";
+            let c="school";
+            console.log(a+b+c);
+            document.getElementByid('contactform').addEventlistener('submit',
+                function(e){
+                    e.preventdefaul()
+                        const first=document.getElementbyid('firstname').value.trim();
+                        const second=document.getElementbyid('secondname').value.trim();
+                        const email=document.getElementByid('email').value.trim();
+                    const message=document.getElementbyid('message').value.trim();
+                   const feedback=document.getElementByid('feedback');
+                   if(first,second,email,message=" "){
+                    feedback.textcontent="please,Try again";
+                    feedback.style.color='red';
+                   }
+                }
+            )
+        </script>
+        <div class="container"> 
+            <h2>fill this form</h2>
+            <form id="contactform">
+                <label for="firstname">FIRST NAME:</label><br>
+                <input type="text" id="name" name="firstname" required>
+                <label for="secondname">SECOND NAME</label>   
+                 <INPUT type="text" id="second" name="secondname" required>
+                    <label for="email">E-MAIL</label>
+                    <input type="text" name="email" id="email" required>
+                    <label for="message">MESSAGE</label>
+                    <textarea name="message" id="message" required></textarea>
+                    <button type="submit">SUBMIT</button>
+                    <P id="feedback"></P>
+            </form>
+        </div>
+    </body>
+</html>
