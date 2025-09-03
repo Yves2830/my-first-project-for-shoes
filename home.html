@@ -13,6 +13,11 @@
                  border-radius: 18px;
                  padding-top: 0px;
                  display: flex;
+                 grid-template-columns: 1fr;
+                 width: 50%;
+    }
+    header{
+        width: 200pxS;
     }
     .cube{
                  width: 10cm;
@@ -20,7 +25,7 @@
                  background-color:blue;
     }
     .kiraclinic{
-                 padding-left: 2px;
+                 padding-left: 0px;
                  color:white;
                  size: 60px;
         
@@ -55,7 +60,7 @@
                  display:inline-block;
     }
     .DESIGN{
-                 font-size: 45PX;
+                 font-size: 40PX;
                  padding-left:40px;
     }
     .closed{
@@ -70,7 +75,7 @@
                  color: aqua;
     }
     .sizeofleft{
-                 padding-left: 50px;
+                 padding-left: 40px;
     }
     nav:hover{
                  color: blue;
@@ -106,7 +111,7 @@
     } 
         a{
                  color: aquamarine;
-                 padding-left: 10px;
+                 padding-left: 5px;
     }
     .location{
                  background-image:url(c:\Users\hp\Pictures\screenlocation.png);
@@ -161,7 +166,7 @@
                  padding-top: 30px;
         }
         .allbody{
-                 padding-left: 50px;
+                 padding-left: 0px;
                  padding-top: 20px;
         }
         .closedandopen{
@@ -185,12 +190,109 @@
             font-size: 50px;
             padding-top: 70px;
         }
+       /* Telefone nto cyane (max 480px) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .kiraclinic {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .qwerty, .azerty {
+    display: block;
+    margin: 10px auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Tablets (481px–768px) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .kiraclinic {
+    font-size: 45px;
+  }
+
+  .serie {
+    width: 100%;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Laptops nto (769px–1024px) */
+@media (max-width: 1024px) {
+  nav a {
+    padding: 5px;
+    font-size: 18px;
+  }
+
+  .created {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .creater {
+    font-size: 35px;
+  }
+}
+
+/* Desktops (>1200px) */
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .kiraclinic {
+    font-size: 70px;
+  }
+}
+
         </style>
     </head>
     <body><div class="allbody">
         <header class="container">
-           <div class="screen"><img src= "Downloads\logo.jpg" alt="" width="110" height="100" ></div>
-           <p class="kiraclinic" style="font-size: 55px;display: flex;"><label style="padding-right: 20px;">BRAHIMU'S SHOP </label><label for="">DESIGN</label></p>
+           
+           <p class="kiraclinic" style="font-size: 55px;display: flex;"><label style="padding-right: 20px;">BRAHIMU'SHOP </label><label for=""></label></p>
         <nav>
             <a href="home.html">Home</a> 
                <a href="service.html" class="sizeofleft">service</a>
@@ -205,12 +307,10 @@
             <td class="closed"> <P><label style="font-size: 90px;color: black;font-family: Arial, Helvetica, sans-serif;">></label><button class="closedandopen"><a href="closed shoes.html"> CLOSED SHOES</a></button></P></td><tr>
   <td><img src="Pictures\inkweto3.jpg" alt="" width="350px" height="390px" class="qwerty" ></td>
  <td> <img src="Pictures\PROJECT\inshongo.jpg" alt="" width="350px" height="390px" class="azerty"></td>
- <td>  <img src="Pictures
-    
-    gi\inkweto6.jpg" alt="" width="350px" height="390px" class="azerty"></td></tr><td><P class="closed"><label style="font-size: 90px;color: black;font-family: Arial, Helvetica, sans-serif;">></label><button class="closedandopen"><a href="openshoes.html">OPEN SHOES</a></button></P></td><tr>
+ </tr><td><P class="closed"><label style="font-size: 90px;color: black;font-family: Arial, Helvetica, sans-serif;">></label><button class="closedandopen"><a href="openshoes.html">OPEN SHOES</a></button></P></td><tr>
  <td> <img src="Pictures\OPENSHOES.1.png" alt="" width="300px" height="250px" class="qwerty"></td>
  <td> <img src="Documents\46.jpg" alt="" width="300px" height="300px" class="azerty"></td>
- <td> <img src="Documents\t.jpg" alt="" width="200px" height="250px" class="azerty"></td></tr>
+ </tr>
     </div>s</table><div>
     <p  class="sentence">In few words we can create new shoes we can makeyour shoes which beased on your wishes</p></div><div>
     <p class="sentence">so,every person they can com on our shop call me for buying the new shoes and any materials on side of clodonie</p></div>
@@ -221,7 +321,7 @@
         <label style="font-family:'Times New Roman', Times, serif;
          text-align: center;
           font-size: 70px;
-           padding-left: 35%;
+           padding-left: 10%;
             padding-top: 20px;">our service( <span style="font-size: 80px; color: rgb(23, 109, 184);">T-S-D</span>)</label>
    
    <p class="paragraph"><span class="T">T</span>raining.
